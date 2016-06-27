@@ -1,0 +1,20 @@
+{
+  "name": "LiniLand",
+  "version": "0.0.1",
+  "description"  : "Telegram Bot for LiniLand",
+  "main"         : "server.js",
+  "author"       : "Mahdi SE",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.20.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "node-telegram-bot-api": "^0.23.3",
+    "request": "^2.72.0"
+  }
+}
