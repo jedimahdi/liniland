@@ -23,8 +23,11 @@ app.use(cookieParser());
 // Bot.sendMessage('@zxcvbnvf', "test", { 'parse_mode': 'HTML', 'disable_web_page_preview': true }).then( function() {
 //     console.log( 'Message sent' );
 // });
+app.get('/', function (req, res) {
+    res.send('go to bot');
+});
 var url = 'http://pop-music.ir/category/single-music/page/1';
-app.get('/' , function (req, res) {
+app.get('/bot' , function (req, res) {
     request(url, function(error, response, html){
         if(!error){
             var $ = cheerio.load(html);
